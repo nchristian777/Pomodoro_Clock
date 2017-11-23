@@ -1,0 +1,46 @@
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  text-align:center;
+}
+
+.header {
+  font-size: 4vw;
+  text-align:center;
+  margin:auto;
+  height:25%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:800;
+}
+
+.timerWrapper {
+  display: inline-block;
+  text-align:center;
+  border: 1px solid;
+  border-color: black; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight:300;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.timerWrapper button {
+  display: inline-block;
+  font-size: 4vw;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:300;
+  padding: 5%;
+}
+
+.timer {
+  display: inline-block;
+  font-size: 4vw;
+  padding:5%;
+}
