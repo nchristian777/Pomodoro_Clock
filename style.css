@@ -6,10 +6,12 @@ html {
 body {
   height: 100%;
   text-align:center;
+  background-color:#AA3939;
 }
 
 .header {
   font-size: 4vw;
+  color:#FFAAAA;
   text-align:center;
   margin:auto;
   height:25%;
@@ -17,30 +19,115 @@ body {
   font-weight:800;
 }
 
+.timerPie {
+  position:relative; 
+  width:20vw;
+  height:20vw;
+  background-color: #801515;
+  border-radius: 100%;
+  margin:auto;
+}
+
+.pie {
+  position: absolute;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  background-color: #550000;
+  transform-origin: 100% 50%;
+}
+
+.spinner {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  z-index: 200;
+  border-right: none;
+  animation: rota 10s linear infinite;
+  right:50%;
+}
+
+.filler {
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  z-index: 100;
+  border-left: none;
+  animation: fill 10s steps(1, end) infinite;
+  left: 50%;
+  opacity: 0;
+}
+
+.mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+  opacity: 1;
+  background: inherit;
+  animation: mask 10s steps(1, end) infinite;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+}
+
+.innerCircle {
+  width: 50%;
+  height: 50%;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  border-radius:100%;
+  position: absolute;
+  z-index: 400;
+  background-color: #AA3939;
+  margin:auto;
+  text-align:center;
+}
+
 .timerWrapper {
   display: inline-block;
   text-align:center;
-  border: 1px solid;
-  border-color: black; 
   font-family: 'Montserrat', sans-serif;
   font-weight:300;
   white-space: nowrap;
   box-sizing: border-box;
+  margin-top:2%;
 }
 
 .timerWrapper button {
   display: inline-block;
-  font-size: 4vw;
-  background-color: black;
-  color: white;
+  font-size: 2vw;
+  background-color:#550000;
+  color: #FFAAAA;
   border: none;
+  border-radius:15%;
   font-family: 'Montserrat', sans-serif;
-  font-weight:300;
-  padding: 5%;
+  font-weight:400;
+  padding: 10%;
 }
 
 .timer {
   display: inline-block;
-  font-size: 4vw;
+  font-size: 2vw;
+  color:#FFAAAA;
   padding:5%;
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  box-sizing: border-box;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  position:absolute;
 }
+
+@keyframes rota {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fill {
+  0%        { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+
+@keyframes mask {
+  0%        { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
