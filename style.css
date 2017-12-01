@@ -79,6 +79,8 @@ body {
   text-align:center;
 }
 
+
+
 .timerWrapper {
   display: inline-block;
   text-align:center;
@@ -114,6 +116,7 @@ body {
   top:50%;
   transform: translate(-50%, -50%);
   position:absolute;
+  white-space: nowrap;
 }
 
 @keyframes rota {
