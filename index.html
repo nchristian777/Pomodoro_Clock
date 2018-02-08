@@ -10,11 +10,11 @@
     <h1>Pomodoro</h1>
   </div>
   <div class="timerPie">
-    <div class="spinner pie">
+    <div class="spinner pie" id="spinner">
     </div>
-    <div class="filler pie">
+    <div class="filler pie" id="filler">
     </div>
-    <div class="mask">
+    <div class="mask" id="mask">
     </div>
     <div class="innerCircle">
       <div class="timer" id="timerDisplay">
@@ -23,7 +23,35 @@
     </div>
   </div>
   <div class="timerWrapper">
-    <button type="button" id="timerButton" >Start</button>
+    <div class="timerControlsWrapper">
+      <div class="controlButtonWrapper">
+        <button type="button" class="controlButton" id="timerButton" >Start</button>
+        <button type="button" class="controlButton" id="timerResetButton" >Reset</button>
+      </div>
+      <div class="setWrapper">
+        <div class="minuteWapper">
+          <div class="incrementLables">
+            Mintues
+          </div>
+          <div class="incrementControl">
+            <button type="button" class="incrementButton" id="minuteIncrement">+</button>
+            <input type="number" id="Minutes" min="0" max="60" value="25">
+            <button type="button" class="incrementButton" id="minuteDecrement">-</button>
+          </div>
+        </div>
+        <div class="secoundWapper">
+          <div class="incrementLables">
+            Secounds
+          </div>
+          <div class="incrementControl">
+            <button type="button" class="incrementButton" id="secoundIncrement">+</button>
+            <input type="number" id="Secounds" min="0" max="59" value="0">
+            <button type="button" class="incrementButton" id="secoundDecrement">-</button>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="controlButton" id="setButton" >Set Time</button>
+    </div>
   </div>
 </body>
 </html>
