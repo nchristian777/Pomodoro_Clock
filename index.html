@@ -6,31 +6,35 @@
   <script src="scripts.js"></script>
 </head>
 <body>
-  <div class="header">
+  <div class="header" id="header">
     <h1>Pomodoro</h1>
   </div>
-  <div class="timerPie">
+  <div class="timerPie" id="timerPie">
     <div class="spinner pie" id="spinner">
     </div>
     <div class="filler pie" id="filler">
     </div>
     <div class="mask" id="mask">
     </div>
-    <div class="innerCircle">
+    <div class="innerCircle" id="innerCircle">
+      <div class="timer phaseLable" id="phaseLable">Work for:</div>
       <div class="timer" id="timerDisplay">
         25:00
       </div>
     </div>
   </div>
-  <div class="timerWrapper">
+  <div class="timerWrapper" id="timerWrapper">
     <div class="timerControlsWrapper">
       <div class="controlButtonWrapper">
         <button type="button" class="controlButton" id="timerButton" >Start</button>
         <button type="button" class="controlButton" id="timerResetButton" >Reset</button>
       </div>
-      <div class="setWrapper">
-        <div class="minuteWapper">
-          <div class="incrementLables">
+      <div class="setWrapper" id="workSetWrapper">
+        <div class="intervalLable">
+          Work Interval
+        </div>
+        <div class="incrementWapper">
+          <div class="incrementLable">
             Mintues
           </div>
           <div class="incrementControl">
@@ -39,8 +43,8 @@
             <button type="button" class="incrementButton" id="minuteDecrement">-</button>
           </div>
         </div>
-        <div class="secoundWapper">
-          <div class="incrementLables">
+        <div class="incrementWapper">
+          <div class="incrementLable">
             Secounds
           </div>
           <div class="incrementControl">
@@ -50,7 +54,32 @@
           </div>
         </div>
       </div>
-      <button type="button" class="controlButton" id="setButton" >Set Time</button>
+      <div class="setWrapper" id="breakSetWrapper">
+        <div class="intervalLable">
+          Break Interval
+        </div>
+        <div class="incrementWapper">
+          <div class="incrementLable">
+            Mintues
+          </div>
+          <div class="incrementControl">
+            <button type="button" class="incrementButton" id="breakMinuteIncrement">+</button>
+            <input type="number" id="breakMinutes" min="0" max="60" value="5">
+            <button type="button" class="incrementButton" id="breakMinuteDecrement">-</button>
+          </div>
+        </div>
+        <div class="incrementWapper">
+          <div class="incrementLable">
+            Secounds
+          </div>
+          <div class="incrementControl">
+            <button type="button" class="incrementButton" id="breakSecoundIncrement">+</button>
+            <input type="number" id="breakSecounds" min="0" max="59" value="0">
+            <button type="button" class="incrementButton" id="breakSecoundDecrement">-</button>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="setButton" id="setButton" >Set Time</button>
     </div>
   </div>
 </body>

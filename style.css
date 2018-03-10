@@ -1,10 +1,8 @@
 html {
   margin: 0;
-  height: 100%;
 }
 
 body {
-  height: 100%;
   text-align:center;
   background-color:#AA3939;
 }
@@ -17,6 +15,18 @@ body {
   height:25%;
   font-family: 'Montserrat', sans-serif;
   font-weight:800;
+}
+
+.header h1{
+  margin:0;
+}
+
+button:focus {
+  outline: none; 
+}
+
+input:focus { 
+  outline: none; 
 }
 
 .timerPie {
@@ -89,13 +99,10 @@ body {
 }
 
 .timerWrapper {
-  display: inline-block;
-  text-align:center;
   font-family: 'Montserrat', sans-serif;
   font-weight:300;
   box-sizing: border-box;
-  margin-top:2%;
-  width:25%;
+  margin-top:1%;
 }
 
 .timerWrapper button {
@@ -103,21 +110,37 @@ body {
   background-color:#550000;
   color: #FFAAAA;
   border: none;
-  border-radius:15%;
+  border-radius:5%;
   font-family: 'Montserrat', sans-serif;
   font-weight:400;
 }
 
 .timerControlsWrapper{
   display:inline-block;
-  width: 50%;
+  width:20vw;
 }
 .controlButtonWrapper{
   white-space:nowrap;
 }
 .controlButton{
-  padding:5%;
-  font-size: 2vw;
+  font-size: 1.5vw;
+  width:50%;
+} 
+.setButton {
+  width:100%;
+  font-size: 1.5vw;
+}
+
+.incrementWapper {
+  display:inline;
+}
+
+.incrementControl {
+  display:block;
+}
+
+.incrementLable {
+  display:block;
 }
 
 .incrementButton{
@@ -141,26 +164,30 @@ body {
   position:absolute;
 }
 
+.phaseLable {
+  top: 30%;
+  font-size: 1.2vw;
+  white-space:nowrap;
+}
+
 .setWrapper {
   color:#FFAAAA;
+  display:inline-block;
   padding-top:5%;
+  padding-bottom:5%;
+  margin: 0.2vw;
 }
 
-
-.incrementLables {
-  display: inline-block;
-  width:50%;
-}
-
-.incrementControl{
-  display: inline-block;
-  width:50%;
+.intervalLable {
+  font-weight:400;
 }
 
 input {
   background-color: #801515;
+  color: #FFAAAA;
   border:none;
   opacity: 1;
+  padding-left: 5%;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
