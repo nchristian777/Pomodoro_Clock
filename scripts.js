@@ -88,6 +88,10 @@ class Timer {
       document.getElementById('spinner').style['background-color'] = '#13073A';
       document.getElementById('filler').style['background-color'] = '#13073A';
       document.getElementById('header').style.color = '#CCC3E8';
+      document.getElementById('timerDisplay').style.color = '#CCC3E8';
+      document.getElementById('phaseLable').style.color = '#CCC3E8';
+      document.getElementById('workSetWrapper').style.color = '#CCC3E8';
+      document.getElementById('breakSetWrapper').style.color = '#CCC3E8';
       for (let i = 0; i < button.length; i += 1) {
         button[i].style['background-color'] = '#13073A';
         button[i].style.color = '#CCC3E8';
@@ -103,6 +107,10 @@ class Timer {
       document.getElementById('spinner').style['background-color'] = '#550000';
       document.getElementById('filler').style['background-color'] = '#550000';
       document.getElementById('header').style.color = '#FFAAAA';
+      document.getElementById('timerDisplay').style.color = '#FFAAAA';
+      document.getElementById('phaseLable').style.color = '#FFAAAA';
+      document.getElementById('workSetWrapper').style.color = '#FFAAAA';
+      document.getElementById('breakSetWrapper').style.color = '#FFAAAA';
       for (let i = 0; i < button.length; i += 1) {
         button[i].style['background-color'] = '#550000';
         button[i].style.color = '#FFAAAA';
